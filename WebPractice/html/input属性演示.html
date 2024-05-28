@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 未访问的链接 */
+        a:link {
+            color: rgb(76, 0, 255);
+        }
+
+
+        /* 已访问的链接  */
+        a:visited {
+            color: rgb(179, 175, 212);
+        }
+
+
+        /* 鼠标悬停链接  */
+        a:hover {
+            color: rgb(240, 255, 105);
+        }
+
+
+        /* 已选择的链接*/
+        a:active {
+            color: rgb(255, 0, 0);
+        }
+
+
+        div {
+            background-color: chartreuse;
+            width: 150px;
+            height: 200px;
+        }
+
+        h1 {
+            display: none;
+            background-color: green;
+            padding: 25px;
+        }
+
+
+
+        div:hover {
+            background-color: blue;
+        }
+
+        div:hover h1 {
+            display: block;
+        }
+
+        body p:first-child {
+            color: rgb(217, 255, 0);
+        }
+
+        /* 若想选择第一个子元素，直接不标子元素类型即可 */
+        p :first-child {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="display">
+        <h1>hshsskhs</h1>
+    </div>
+    <p>我<strong>是</strong>一个<i>强壮</i>的男人。我是一个<i>强壮</i>的男人。</p>
+    <p>我是一个<i>强壮</i>的男人。我是一个<i>强壮</i>的男人。</p>
+    <div></div>
+    <p>This is some text.</p>
+    <p>This is some text.</p>
+    <a href="http://www.baidu.com" target="_blank" rel="noopener noreferrer" class="highlight">baidu</a>
+</body>
+
+</html>
